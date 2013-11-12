@@ -5,17 +5,26 @@ This was developed to provide the client with a finished product in the event th
 Required
 ========
 Upload Image
+
 Grid View
+
 Page Links
+
 Button Links
+
 Amendment of Create/Display/Update pages to contain only editable/displayable fields
+
 CSS layouting
+
 
 ... maybe other stuff that I am not presently aware of.
 
 Installs
 ========
 -> In Package Manager Console type 'install-package EntityFramework -version 5.0.0'
+
 -> In Package Manager Console type 'install-package Newtonsoft.JSon'
+
 -> In Package Manager Console type 'install-package jQuery.ui.combined'
+
 -> In Package Manager Console type 'update-database'
