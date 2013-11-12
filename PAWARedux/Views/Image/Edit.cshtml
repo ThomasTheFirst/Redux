@@ -1,0 +1,107 @@
+﻿@model PAWARedux.Models.File
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>File</legend>
+
+        @Html.HiddenFor(model => model.FileID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserID, "User")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UserID", String.Empty)
+            @Html.ValidationMessageFor(model => model.UserID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TypeID, "Type")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("TypeID", String.Empty)
+            @Html.ValidationMessageFor(model => model.TypeID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FolderID, "Folder")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("FolderID", String.Empty)
+            @Html.ValidationMessageFor(model => model.FolderID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Tags)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Tags)
+            @Html.ValidationMessageFor(model => model.Tags)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Filename)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Filename)
+            @Html.ValidationMessageFor(model => model.Filename)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UploadedDateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UploadedDateTime)
+            @Html.ValidationMessageFor(model => model.UploadedDateTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SizeMB)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SizeMB)
+            @Html.ValidationMessageFor(model => model.SizeMB)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SizeHeight)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SizeHeight)
+            @Html.ValidationMessageFor(model => model.SizeHeight)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SizeWidth)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SizeWidth)
+            @Html.ValidationMessageFor(model => model.SizeWidth)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

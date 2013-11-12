@@ -1,0 +1,64 @@
+﻿@model PAWARedux.Models.DailyStatistics
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DailyStatistics</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsersAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsersAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsersLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsersLostCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImagesAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImagesAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImagesLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImagesLostCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VideosAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VideosAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VideosLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VideosLostCount)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DailyStatisticsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

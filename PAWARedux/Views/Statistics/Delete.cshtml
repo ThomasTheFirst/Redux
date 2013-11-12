@@ -1,0 +1,68 @@
+﻿@model PAWARedux.Models.DailyStatistics
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>DailyStatistics</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsersAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsersAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UsersLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UsersLostCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImagesAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImagesAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ImagesLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ImagesLostCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VideosAddedCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VideosAddedCount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VideosLostCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VideosLostCount)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

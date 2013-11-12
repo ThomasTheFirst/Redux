@@ -1,0 +1,36 @@
+﻿@model PAWARedux.Models.Tags
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Tags</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TagName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TagName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstDateTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstDateTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UseCount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UseCount)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TagsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

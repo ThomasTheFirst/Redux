@@ -1,0 +1,49 @@
+﻿@model PAWARedux.Models.Tags
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Tags</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TagName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TagName)
+            @Html.ValidationMessageFor(model => model.TagName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstDateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstDateTime)
+            @Html.ValidationMessageFor(model => model.FirstDateTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UseCount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UseCount)
+            @Html.ValidationMessageFor(model => model.UseCount)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+

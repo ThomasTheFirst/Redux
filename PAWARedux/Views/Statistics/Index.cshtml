@@ -1,0 +1,69 @@
+﻿@model IEnumerable<PAWARedux.Models.DailyStatistics>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsersAddedCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsersLostCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImagesAddedCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImagesLostCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideosAddedCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VideosLostCount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsersAddedCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsersLostCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImagesAddedCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImagesLostCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideosAddedCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VideosLostCount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DailyStatisticsID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DailyStatisticsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DailyStatisticsID })
+        </td>
+    </tr>
+}
+
+</table>

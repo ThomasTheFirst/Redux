@@ -1,0 +1,12 @@
+E:\Programming\PAWARedux\PAWARedux\obj\Debug\PAWARedux.csprojResolveAssemblyReference.cache
+E:\Programming\PAWARedux\PAWARedux\bin\PAWARedux.dll
+E:\Programming\PAWARedux\PAWARedux\bin\PAWARedux.pdb
+E:\Programming\PAWARedux\PAWARedux\obj\Debug\PAWARedux.dll
+E:\Programming\PAWARedux\PAWARedux\obj\Debug\PAWARedux.pdb
+E:\Programming\PAWARedux\PAWARedux\bin\EntityFramework.dll
+E:\Programming\PAWARedux\PAWARedux\bin\EntityFramework.xml
+E:\Programming\PAWARedux\PAWARedux\bin\Antlr3.Runtime.dll
+E:\Programming\PAWARedux\PAWARedux\bin\System.Web.Optimization.dll
+E:\Programming\PAWARedux\PAWARedux\bin\WebGrease.dll
+E:\Programming\PAWARedux\PAWARedux\bin\Antlr3.Runtime.pdb
+E:\Programming\PAWARedux\PAWARedux\bin\System.Web.Optimization.xml

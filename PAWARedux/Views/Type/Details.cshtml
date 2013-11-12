@@ -1,0 +1,29 @@
+﻿@model PAWARedux.Models.Type
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Type</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Extension)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Extension)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstDateTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstDateTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TypeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

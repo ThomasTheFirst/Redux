@@ -1,0 +1,87 @@
+﻿@model IEnumerable<PAWARedux.Models.File>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type.Extension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Folder.FolderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tags)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Filename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UploadedDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SizeMB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SizeHeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SizeWidth)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type.Extension)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Folder.FolderName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tags)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Filename)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UploadedDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeMB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeHeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SizeWidth)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FileID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FileID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FileID })
+        </td>
+    </tr>
+}
+
+</table>
