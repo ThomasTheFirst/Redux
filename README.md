@@ -15,7 +15,7 @@ CSS layouting
 
 Installs
 ========
-  -> In Package Manager Console type 'install-package EntityFramework -version 5.0.0'
-  -> In Package Manager Console type 'install-package Newtonsoft.JSon'
-  -> In Package Manager Console type 'install-package jQuery.ui.combined'
-??-> In Package Manager Console type 'update-database'
+-> In Package Manager Console type 'install-package EntityFramework -version 5.0.0'
+-> In Package Manager Console type 'install-package Newtonsoft.JSon'
+-> In Package Manager Console type 'install-package jQuery.ui.combined'
+-> In Package Manager Console type 'update-database'
