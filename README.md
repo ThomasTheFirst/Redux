@@ -12,3 +12,10 @@ Amendment of Create/Display/Update pages to contain only editable/displayable fi
 CSS layouting
 
 ... maybe other stuff that I am not presently aware of.
+
+Installs
+========
+  -> In Package Manager Console type 'install-package EntityFramework -version 5.0.0'
+  -> In Package Manager Console type 'install-package Newtonsoft.JSon'
+  -> In Package Manager Console type 'install-package jQuery.ui.combined'
+??-> In Package Manager Console type 'update-database'
